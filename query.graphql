@@ -1,24 +1,23 @@
 query getBooks {
-	book {
-		id
-		name
-		genre
-
-	}
+  book {
+    id
+    name
+    genre
+  }
 }
 
 mutation addBook {
-	insert_book (
-		object: {
-			name: "Motorcycles and Swag"
-			author: {
-				name: "Rishi"
-				date_of_birth: "27-05-1994"
-			}
-		}
-	) {
-		id
-		name
-		genre
-	}
+  insert_book (
+    object: {
+      name: "Motorcycles and Swag"
+      author: {
+        name: "Rishi"
+        date_of_birth: "27-05-1994"
+      }
+    }
+  ) {
+    id
+    name
+    genre
+  }
 }
