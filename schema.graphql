@@ -14,7 +14,7 @@ type query_root {
 
 type book {
   id: ID!
-  name: String!
+  title: String!
   genre: String!
   score: Int!
   author: Author!
