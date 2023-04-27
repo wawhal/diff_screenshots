@@ -1,0 +1,27 @@
+schema {
+  query: query_root
+  mutation: mutation_root
+  subscription: subscription_root
+}
+
+type mutation_root {
+  insert_book(object: book_insert_input!): book
+}
+
+type query_root {
+  book: [book!]!
+}
+
+type book {
+  id: ID!
+  name: String!
+  genre: String
+  author: Author!
+}
+
+type author {
+  name: String!
+  date_of_birth: Date!
+  books: [book!]!
+}
+
